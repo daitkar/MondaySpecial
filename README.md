@@ -1,7 +1,7 @@
 # 4th- to run this  application
 1.clone repository in your pc usin "git clone < repository  address>" then
 
-2.install node  in our pc
+2.install node  in your pc
 
 3.after that install npm
 
