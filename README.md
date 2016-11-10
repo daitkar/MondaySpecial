@@ -1,5 +1,5 @@
 # 4th- to run this  application
-1.clone repository in your pc usin "git clone <repository address>" then
+1.clone repository in your pc usin "git clone < repository  address>" then
 
 2.install node  in our pc
 
