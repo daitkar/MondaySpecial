@@ -7,6 +7,6 @@
 
 4.and hit the command 'npm run watch'
 
-5.to start node server "node server.js"
+5.and also start second  node server using this command "node server.js" for mail sending its require
 
 NOW YOU CAN USE OUR APP !!!!!!!!!!!!!!!
