@@ -1,0 +1,45 @@
+<div class="container backSide">
+    <div class="row ">
+
+        <div class="col-md-3">
+            <div class="element">Traveller</div>
+            <img src="../../assets/globals/download.jpg" class="images">
+
+
+    </div>
+
+        <div class="col-md-6 backchange">
+            <div class="heading"> Flight booking !</div>
+            <div class="stepwizard col-xs-12 ">
+
+                    <div class="stepwizard-step">
+                        <a ui-sref=".userInfo" type="button" ng-class="classChange==0? 'btn-primary':'btn-default'"
+                           class="btn btn-circle"
+                           ng-disabled="classChange==0?false:true">1</a>
+                        <p class="lineText">Register</p>
+                    </div>
+                    <div class="stepwizard-step">
+                        <a ui-sref=".datePick" type="button" ng-class="classChange==1? 'btn-primary':'btn-default'"
+                           class="btn btn-circle"
+                           ng-disabled="classChange==1?false:true">2</a>
+                        <p class="lineText">DatePicker</p>
+                    </div>
+                    <div class="stepwizard-step">
+                        <a ui-sref=".confirm" type="button" ng-class="classChange==2? 'btn-primary':'btn-default'"
+                           class="btn  btn-circle"
+                           ng-disabled="classChange==2?false:true">3</a>
+                        <p class="lineText">Confirm</p>
+                    </div>
+
+
+            </div>
+            <!-- our nested state views will be injected here -->
+            <div  id="form-views" ui-view></div>
+        </div>
+        <div class="col-md-3 leftside">
+
+            <img src="../../assets/globals/down.jpg" class="leftimages">
+        </div>
+    </div>
+
+</div>

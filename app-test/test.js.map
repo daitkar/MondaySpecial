@@ -1,0 +1,1 @@
+{"version":3,"sources":["/app/test.js"],"names":["require"],"mappings":";;;;;;;AAAA,oBAAAA,CAAQ,mB","file":"test.js","sourcesContent":["require('angular');\n\n\n/** WEBPACK FOOTER **\n ** ./app/test.js\n **/"],"sourceRoot":""}

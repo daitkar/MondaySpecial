@@ -1,0 +1,75 @@
+<form role="form" name="dateForm" action="" method="post">
+    <div class="row setup-content" id="step-2">
+        <div class="col-xs-12 ">
+            <div class="col-md-12">
+                <h3>DateSelection - page</h3>
+
+                <label class="control-label">location</label>
+
+                <div class="form-group ">
+                    <ui-select ng-model="country.selected"
+                               tagging="true" theme="select2"
+                               class="widthSeter"
+                               ng-required="true">
+                        <ui-select-match placeholder="Select city..." >{{$select.selected}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="city in country | filter: $select.search">
+                            {{city}} | {{$select.search}}
+                        </ui-select-choices>
+                    </ui-select>
+
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Depart Date</label>
+                    <div class="row">
+
+                        <p class="input-group ">
+                            <input type="date" class="form-control" id="dpd1"
+                                   uib-datepicker-popup
+                                   datepicker-options="dateOptions"
+                                   ng-model="dt"
+                                   is-open="showdp"
+                                   ng-required="true"
+                                   ng-change="changeHandler()"
+                                   close-text="Close"
+                                   ng-readonly="true"
+                                  />
+                          <span class="input-group-btn">
+                             <button type="button" class="btn btn-default" ng-click="showcalendar($event)"><i
+                                     class="glyphicon glyphicon-calendar"></i></button>
+                        </span>
+                        </p>
+
+
+                    </div>
+
+                    <label class="control-label">Return Date</label>
+                    <div class="row">
+
+                        <p class="input-group ">
+                            <input type="date" class="form-control" id="dpd2"
+                                   uib-datepicker-popup
+                                   ng-model="ds"
+                                   is-open="showd"
+                                   close-text="Close"
+                                   datepicker-options="dateOption"
+                                   ng-readonly="true"
+                                   />
+                          <span class="input-group-btn">
+                             <button type="button" class="btn btn-default" ng-click="showcalendars($event)"><i
+                                     class="glyphicon glyphicon-calendar"></i></button>
+                        </span>
+                        </p>
+
+
+                    </div>
+                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" ng-click="handleClicks()">
+                        Next
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</form>
